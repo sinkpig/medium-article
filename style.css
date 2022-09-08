@@ -1,0 +1,310 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+body {
+  display: flex;
+  justify-content: space-between;
+  color: #292929;
+  font-weight: 400;
+  font-size: 16px;
+}
+blockquote {
+  padding-left: 30px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ul {
+  padding: 0;
+  list-style: none;
+  list-style-image: none;
+}
+li {
+  margin-top: 22px;
+  margin-left: 30px;
+  list-style-type: disc;
+  letter-spacing: -0.003em;
+  line-height: 28px;
+  font-size: 20px;
+  font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+}
+li:first-child {
+  margin-top: 2.14em;
+}
+button {
+  all: unset;
+  padding: 10px 0;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+  display: block;
+}
+button.primary {
+  background-color: #191919;
+}
+button.secondary {
+  background-color: #848585;
+}
+input {
+  all: unset;
+  background-color: white;
+  border: 1px solid #e6e6e6;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.container {
+  max-width: 692px;
+  margin: 0 32px;
+  width: 100%;
+}
+
+section.left {
+  min-height: 100vh;
+  width: 80px;
+  position: fixed;
+  flex-shrink: 1;
+  background-color: white;
+}
+section.left nav {
+  border-right: 1px solid #e6e6e6;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 25px;
+}
+section.left nav .logo {
+  padding: 30px 18px 0 18px;
+}
+section.left nav .logo img {
+  width: 100%;
+  height: auto;
+}
+section.left nav .nav-links {
+  padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #757575;
+}
+section.left nav .nav-links a,
+section.left nav .nav-links div.line {
+  margin: 15px 0;
+}
+section.left nav .nav-links .line {
+  width: 100%;
+  height: 1px;
+  background-color: #e6e6e6;
+}
+section.left nav .spacer {
+  height: 73px;
+  width: 100%;
+}
+
+main.center {
+  flex: 1 1 auto;
+  background-color: white;
+  margin-left: 80px;
+  position: relative;
+}
+main.center header {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #e6e6e6;
+  height: 56px;
+}
+main.center header nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 14px;
+  height: 100%;
+  width: 100%;
+}
+main.center header img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+main.center header p {
+  font-weight: 400;
+  color: #757575;
+}
+main.center header p span {
+  color: #292929;
+}
+main.center .content {
+  padding: 65px 0;
+  display: flex;
+  justify-content: center;
+}
+main.center .content,
+main.center .content .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main.center .content {
+  justify-content: center;
+}
+main.center .content .header .left {
+  display: flex;
+}
+main.center .content .header .left img.profile {
+  border-radius: 50%;
+  margin-right: 20px;
+}
+main.center .content .header .left .username {
+  margin-bottom: 5px;
+}
+main.center .content .header .left .links {
+  color: #848585;
+  font-size: 14px;
+}
+main.center .content .header .right {
+  color: #848585;
+}
+main.center .content .header .right {
+  color: #848585;
+}
+main.center .content .header .right a {
+  padding-left: 10px;
+}
+main.center .content .header .right a:last-of-type {
+  padding-left: 40px;
+  padding-right: 16px;
+}
+main.center .content figure {
+  margin-top: 32px;
+}
+main.center .content figure img {
+  max-width: 100%;
+  height: auto;
+}
+main.center .content h1 {
+  margin-top: 20px;
+  font-size: 32px;
+}
+main.center .content h2 {
+  margin-top: 20px;
+  font-size: 22px;
+  color: #757575;
+  font-weight: 400;
+}
+main.center .content .article p {
+  margin-top: 32px;
+  font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+main.center .content .article blockquote p {
+  font-weight: 300;
+  font-size: 28px;
+  color: #757587;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+main .social-tab {
+  position: fixed;
+  bottom: 16px;
+  right: 50%;
+  z-index: 100;
+  background-color: white;
+  border-radius: 30px;
+  padding: 16px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 2px 10px 0px;
+  color: #757575;
+}
+main .social-tab span.line {
+  display: inline-block;
+  background-color: #757575;
+  width: 1px;
+  height: 12px;
+  margin: 0 10px;
+  opacity: 0.3;
+}
+main .social-tab span i {
+  margin-right: 5px;
+}
+
+section.right {
+  background-color: white;
+  position: sticky;
+}
+section.right aside {
+  border-left: 1px solid #e6e6e6;
+  width: 394px;
+  min-height: 100vh;
+  padding: 0 32px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 32px;
+}
+section.right aside .content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+section.right aside .content .buttons-container {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+section.right aside .content .buttons-container button {
+  flex: 1 0 auto;
+}
+section.right aside .content .buttons-container a {
+  margin-left: 24px;
+  color: #848585;
+  font-size: 14px;
+}
+section.right aside .content input {
+  margin-top: 40px;
+  padding-left: 30px;
+  font-size: 14px;
+}
+section.right aside .content .user-info {
+  margin-top: 40px;
+}
+section.right aside .content .user-info img {
+  border-radius: 50%;
+}
+section.right aside .content .user-info h2 {
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 16px;
+}
+section.right aside .content .user-info .followers {
+  line-height: 24px;
+  font-size: 16px;
+  color: #757575;
+  font-weight: 400;
+  margin-top: 4px;
+}
+section.right aside .content .user-info .description {
+  line-height: 20px;
+  font-size: 14px;
+  color: #757575;
+  font-weight: 400;
+  margin-top: 12px;
+}
+section.right aside .content .user-info .buttons-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 24px;
+  font-size: 14px;
+}
+section.right aside .content .user-info .buttons-container button {
+  padding: 7px 16px 9px;
+  flex: unset;
+}
+section.right aside .content .user-info .buttons-container button:last-of-type {
+  margin-left: 8px;
+}
